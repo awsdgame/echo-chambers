@@ -20,7 +20,7 @@ const words = [
 
 let currentIndex = 0;
 let score = 0;
-let timeLimit = 3000; // 3 seconds
+let timeLimit = 2500; // 3 seconds
 let timer;
 let countdownInterval;
 
@@ -96,7 +96,7 @@ userInput.addEventListener("input", () => {
     score++;
     scoreDisplay.textContent = `Score: ${score}`;
     currentIndex++;
-    setTimeout(loadNextWord, 400); // Short pause for feedback
+    setTimeout(loadNextWord, 1); // Short pause for feedback
   }
 });
 
